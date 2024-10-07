@@ -1,6 +1,6 @@
 from transformers import MarianMTModel, MarianTokenizer
 import torch 
-
+import os
 from flask import Flask, request, jsonify
 app = Flask(__name__)
 def translate_text(text, target_language,reverse=False):
